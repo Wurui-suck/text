@@ -1,0 +1,63 @@
+<!DOCTPYE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>口袋画板</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="//at.alicdn.com/t/font_687099_t2bcm97x9kzc9pb9.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    
+    <div class="wrapper">
+        <canvas id="canvasBoard">
+        </canvas>
+        <div class="eraserCir" id="eraserCir"></div>
+    </div>
+    <div id="actions" class="actions x">
+            <svg id="pen" class="icon active">
+                    <use xlink:href="#icon-pen"></use>
+            </svg>
+            <svg id="brush" class="icon">
+                    <use xlink:href="#icon-brush"></use>
+            </svg>
+            <svg id="eraser" class="icon">
+                    <use xlink:href="#icon-eraser"></use>
+            </svg>
+            <svg id="cancel" class="icon ban">
+                <use xlink:href="#icon-chexiao"></use>
+            </svg>
+            <svg id="clearCanvas" class="icon">
+                    <use xlink:href="#icon-clear"></use>
+            </svg>
+            <svg id="download" class="icon">
+                    <use xlink:href="#icon-download"></use>
+            </svg>
+    </div>
+    <div id="colorMask" class="colorMask clearfix">
+        <ol id="colorOne" class="color">
+                <li id="black" class="black active"></li>
+                <li id="red" class="red"></li>
+                <li id="blue" class="blue"></li>
+                <li id="pink" class="pink"></li>
+                <li id="yellow" class="yellow"></li>
+                <li id="green" class="green"></li>
+        </ol>
+        <ol id="colorTwo" class="colorTwo">
+                <li id="grey" class="grey"></li>
+                <li id="purple" class="purple"></li>
+                <li id="maroon" class="maroon"></li>
+                <li id="lawngreen" class="lawngreen"></li>
+                <li id="orange" class="orange"></li>
+                <li id="aqua" class="aqua"></li>
+        </ol>
+        <svg id="left" class="icon">
+                <use xlink:href="#icon-next"></use>
+        </svg>
+        <svg id="right" class="icon">
+                <use xlink:href="#icon-arr-right"></use>
+        </svg>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
